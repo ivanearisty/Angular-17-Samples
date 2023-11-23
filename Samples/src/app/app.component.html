@@ -1,0 +1,50 @@
+<router-outlet>
+    <h3>For loop</h3>
+    <div>
+      For loop using output example:
+    <app-forloop></app-forloop>
+    </div>  
+    <hr /> <!-- Horizontal line as a divisor -->
+    <h3>Mouse actions</h3>
+    <div style="margin-top: 20px;">
+      On mouse hover example:
+      <app-hovering/>
+    </div>
+    <hr /> <!-- Horizontal line as a divisor -->
+    <h3>Deferred actions</h3>
+    <div style="margin-top: 20px;">
+      This is an example of a component that has deffered loading:
+      <app-loaddeferals/>
+    </div>
+
+    <h3>Routing</h3>
+    The routing for angular has changed. Here is a <a href="https://angular.dev/tutorials/learn-angular/enable-routing">link </a> to the updated routing
+    <br> 
+    To add new <a href="https://angular.dev/tutorials/learn-angular/define-a-route">pages</a>, for dynamic routing <a href="https://angular.dev/tutorials/learn-angular/routerLink">here.</a> 
+    <hr /> <!-- Horizontal line as a divisor -->
+    <h3>Forms</h3>
+    In Angular, there are two types of forms: template-driven and reactive. 
+    <br>
+    This is a template form:
+    <app-template-driven-form/>
+    
+    <p> When you want to manage your forms programmatically instead relying purely on the template, reactive forms are the answer. </p>
+    <app-reactive-form/>
+  
+    <hr /> <!-- Horizontal line as a divisor -->
+    <h3>Dependency Injection</h3>
+    Services can be injected like in spring.
+    Two main roles exist in the DI system: dependency consumer and dependency provider.
+    Angular facilitates the interaction between dependency consumers and dependency providers using an abstraction called Injector. When a dependency is requested, the injector checks its registry to see if there is an instance already available there. If not, a new instance is created and stored in the registry. Angular creates an application-wide injector (also known as "root" injector) during the application bootstrap process, as well as any other injectors as needed. In most cases you don't need to manually create injectors, but you should know that there is a layer that connects providers and consumers.
+    <br>
+    <p>
+    There is an array holding cars that is injected into a component that displays the array, here is the array:
+    </p>
+    <app-service-example/>
+  
+    <hr /> <!-- Horizontal line as a divisor -->
+    
+    <h3>Pipes</h3>
+    <p>Pipes are functions that are used to transform data in templates. In general, pipes are "pure" functions that don't cause side effects. Angular has a number of helpful built-in pipes you can import and use in your components. You can also create a custom pipe.    </p>
+    <app-pipe/>
+  </router-outlet>

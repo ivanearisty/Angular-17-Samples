@@ -4,6 +4,11 @@ import { RouterOutlet } from '@angular/router';
 import { ForloopComponent } from './forloop.component';
 import { HoveringComponent } from './hovering.component';
 import { LoaddeferalsComponent } from './loaddeferals.component';
+import { TemplateDrivenFormComponent } from './template-driven-form.component';
+import { ReactiveFormComponent } from './reactive-form.component';
+import { ServiceExample } from './service-example.component';
+import { PipeComponent } from './pipe.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -12,26 +17,13 @@ import { LoaddeferalsComponent } from './loaddeferals.component';
     RouterOutlet,
     ForloopComponent,
     HoveringComponent,
-    LoaddeferalsComponent
+    LoaddeferalsComponent,
+    TemplateDrivenFormComponent,
+    ReactiveFormComponent,
+    ServiceExample,
+    PipeComponent
   ],
-  template: `
-  <router-outlet>
-  <div>
-    For loop using output example:
-  <app-forloop></app-forloop>
-  </div>  
-  <hr /> <!-- Horizontal line as a divisor -->
-  <div style="margin-top: 20px;">
-    On mouse hover example:
-    <app-hovering></app-hovering>
-  </div>
-  <hr /> <!-- Horizontal line as a divisor -->
-  <div style="margin-top: 20px;">
-    This is an example of a component that has deffered loading:
-    <app-loaddeferals/>
-  </div>
-  </router-outlet>
-  `,
+  templateUrl: "./app.component.html",
   styles:``
 })
 export class AppComponent {

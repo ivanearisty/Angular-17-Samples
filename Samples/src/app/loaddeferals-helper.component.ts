@@ -5,7 +5,7 @@ import {Component} from '@angular/core';
   template: `
     <ul>
       <li>Building for the web is fantastic!</li>
-      <li>The new template syntax is great</li>
+      <li>The new template syntax is great.</li>
       <li>I agree with the other comments!</li>
     </ul>
   `,
